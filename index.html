@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="header-container">
+            <h1>AgroSustentável</h1>
+            <button id="toggle-dark-mode" aria-label="Alternar modo escuro">🌓 Modo Escuro</button>
+        </div>
+    </header>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#pilares">Pilares</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Agro forte, futuro sustentável</h2>
+                <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+                <button id="btn-conhecer" class="btn-primary">Conhecer Pilares</button>
+            </div>
+        </section>
+
+        <section id="sobre" class="section-padding">
+            <h2>O Equilíbrio é o Caminho</h2>
+            <p>A agricultura moderna não precisa escolher entre produzir alimentos e proteger o planeta. Através da tecnologia, do manejo correto do solo e do respeito à biodiversidade, o agro brasileiro mostra que a produtividade e a sustentabilidade caminham juntas.</p>
+            
+            <div id="dynamic-message-box" class="hidden">
+                <p id="dynamic-text"></p>
+            </div>
+        </section>
+
+        <section id="pilares" class="section-padding">
+            <h2>Nossos Pilares</h2>
+            <div class="cards-container">
+                <article class="card">
+                    <h3>Tecnologia Verde</h3>
+                    <p>Uso de drones, sensores e IA para aplicar insumos na quantidade exata, reduzindo o desperdício.</p>
+                </article>
+                <article class="card">
+                    <h3>Manejo Direto</h3>
+                    <p>Técnicas que protegem o solo contra a erosão e mantêm os nutrientes de forma natural.</p>
+                </article>
+                <article class="card">
+                    <h3>Preservação</h3>
+                    <p>Respeito às áreas de reserva legal e proteção de nascentes integradas à produção.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="section-padding">
+            <h2>Faça Parte Desse Futuro</h2>
+            <p>Ficou com alguma dúvida ou quer saber mais sobre projetos sustentáveis? Envie uma mensagem!</p>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                    <span class="error-message" id="error-nome">O nome deve ter pelo menos 3 caracteres.</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com">
+                    <span class="error-message" id="error-email">Insira um e-mail válido.</span>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+            <div id="form-success" class="hidden-msg">Formulário enviado com sucesso! Obrigado pelo contato.</div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <p>&copy; 2026 AgroSustentável. Todos os direitos reservados.</p>
+        <p>Equilíbrio entre produção e meio ambiente.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
